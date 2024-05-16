@@ -19,7 +19,9 @@ namespace JmmTest.Models
 
         public DateTime Gduedate { get; set; }
 
-        public string priority { get; set; }
+        public Priority priority { get; set; }
+
+        public Status Status { get; set; }
 
     }
 }

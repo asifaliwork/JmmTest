@@ -53,7 +53,7 @@ namespace JmmTest.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Address,MobileNumber,title,description,Gduedate,priority")] Jmm jmm)
+        public async Task<IActionResult> Create([Bind("Id,Name,Address,MobileNumber,title,description,Gduedate,priority,Status")] Jmm jmm)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace JmmTest.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Address,MobileNumber,title,description,Gduedate,priority")] Jmm jmm)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Address,MobileNumber,title,description,Gduedate,priority,Status")] Jmm jmm)
         {
             if (id != jmm.Id)
             {
